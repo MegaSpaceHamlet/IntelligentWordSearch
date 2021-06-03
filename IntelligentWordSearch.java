@@ -19,9 +19,10 @@ import java.util.Scanner;
 import java.lang.InterruptedException;
 
 public class IntelligentWordSearch {
-    static File fileDirectory = new File("C:/Users/mende/Desktop/random-notes");
+    static File fileDirectory = new File("Enter the absolute path to the directory with all your .txt files here!");
 
     public static void main(String[] args) throws IOException, InterruptedException {
+        
         String query = presentSearchQuery();
         MatchingFiles matchingFiles = searchIndex(query, gatherFiles());
         matchingFiles.sort();
